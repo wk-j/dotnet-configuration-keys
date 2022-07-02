@@ -2,7 +2,7 @@ namespace KeysConfiguration;
 
 using Microsoft.Extensions.Configuration;
 
-public class ConfigurationKeysSource : IConfigurationSource {
+public class KeysConfigurationSource : IConfigurationSource {
 
     public IEnumerable<KeyValuePair<string, string?>>? InitialData { get; set; }
     public string KeysSection { set; get; } = "Keys";
@@ -35,6 +35,6 @@ public class ConfigurationKeysSource : IConfigurationSource {
 
         InitialData = newConfig;
 
-        return new ConfigurationKeysProvider(this);
+        return new KeysConfigurationProvider(this);
     }
 }

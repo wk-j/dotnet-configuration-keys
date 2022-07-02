@@ -3,14 +3,14 @@ namespace KeysConfiguration;
 using System.Collections;
 using Microsoft.Extensions.Configuration;
 
-public class ConfigurationKeysProvider : ConfigurationProvider, IEnumerable<KeyValuePair<string, string?>> {
-    private readonly ConfigurationKeysSource _source;
+public class KeysConfigurationProvider : ConfigurationProvider, IEnumerable<KeyValuePair<string, string?>> {
+    private readonly KeysConfigurationSource _source;
 
     /// <summary>
     /// Initialize a new instance from the source.
     /// </summary>
     /// <param name="source">The source settings.</param>
-    public ConfigurationKeysProvider(ConfigurationKeysSource source) {
+    public KeysConfigurationProvider(KeysConfigurationSource source) {
         _source = source;
 
         if (_source.InitialData != null) {
