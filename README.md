@@ -1,9 +1,11 @@
-## Replace all configuration with Keys section
+## Reuseable key configuration
 
 [![Actions](https://github.com/wk-j/dotnet-keys-configuration/workflows/Build/badge.svg)](https://github.com/wk-j/dotnet-keys-configuration/actions)
 [![NuGet](https://img.shields.io/nuget/v/wk.KeysConfiguration.svg)](https://www.nuget.org/packages/wk.KeysConfiguration)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/wk.KeysConfiguration.svg)](https://www.nuget.org/packages/wk.KeysConfiguration)
 [![NuGet](https://buildstats.info/nuget/wk.KeysConfiguration)](https://www.nuget.org/packages/wk.KeysConfiguration)
+
+## Installation
 
 ```
 dotnet add src/MyWeb package wk.KeysConfiguration
